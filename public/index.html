@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>10 Things you should keep doing in life</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>    
+    <style>
+    @font-face {
+    font-family:"fancy";
+    src: url("fancy-font.ttf") 
+    }
+    .fancyText {		
+	color:black;
+	font-family:fancy, sans-serif;   
+    }       
+    body {
+    background-image: url('white-wood.jpg');
+    }   
+    a:hover{
+    text-decoration: none !important;
+    }    
+    </style>
+    <script src="libs/angular/angular.min.js"></script>
+    <script src="libs/angular/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>  
+</head>
+<body >
+    <h1 class="fancyText" style="font-size:30px;" align="center">
+        <i><b>10 Things you should keep doing in life</b></i>
+    </h1>
+    <div class="container" ng-view></div>
+</body>
+</html>
+
