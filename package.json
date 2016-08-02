@@ -2,7 +2,7 @@
   "name": "10thingsToDo",
   "version": "1.0.0",
   "description": "Node+Angular",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "test": "nodemon app.js"
   },

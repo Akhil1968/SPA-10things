@@ -1,28 +1,35 @@
 <br/> 
 <div class="row">    
-   <div class="col-md-offset-4 col-md-3">
-     <a href="#/details/{{prevItem}}" class="btn btn-left"><b>&lt;&lt;&nbsp;Previous</b></a>
+   <div class="col-md-4">
+     <a href="#/details/{{dc.prevItem}}" class="btn btn-success"><b>Previous</b></a>
    </div> 
-   <div class="col-md-2">
-       <a href="#/details/{{nextItem}}" class="btn btn-right"><b>Next&nbsp;&gt;&gt;</b></a>
+    <div class="col-md-4">
+       <a href="#/list" class="btn btn-warning"><b>Main Page</b></a>
+   </div>
+   <div class="col-md-4">
+       <a href="#/details/{{dc.nextItem}}" class="btn btn-success"><b>Next</b></a>
    </div>
 </div> 
-<div>          
-       <h1 align="center">
-       <code class="fancyText"><b>{{whichItem*1+1}}. {{tenThings[whichItem].name}}</b></code>
-       </h1><br/>     
-       <div class="row">     
-           <div class="col-md-6">
-             <img height="360" width="640" ng-src="images/{{tenThings[whichItem].imageName}}.jpg" 
-                  alt="Photo of {{tenThings[whichItem].name}}">
-           </div>
-           <div class="col-md-offset-1 col-md-4"><h3>{{tenThings[whichItem].description}}</h3></div>
-       </div>        
+<div class="row">          
+   <h1 align="center"><code class="fancyText">
+   <b>{{dc.whichItem*1+1}}. {{dc.tenThings[dc.whichItem].name}}</b>
+   </code></h1>
+   <br/>     
+   <div class="row">     
+       <div class="col-md-6">
+         <img height="240" width="480" 
+         ng-src="images/{{dc.tenThings[dc.whichItem].imageName}}.jpg" 
+              alt="Photo of {{dc.tenThings[dc.whichItem].name}}">
+       </div>
+       <div class="col-md-offset-1 col-md-4 fancyText">
+        <h3>{{dc.tenThings[dc.whichItem].description}}</h3>
+       </div>
+   </div>   
+   <br><br>     
 </div>
 
-<br/><br/>
 
 
-<h4 align="center"><a href="#/list">&laquo; Back to main page</a></h4>
+
 
  

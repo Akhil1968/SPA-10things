@@ -1,26 +1,29 @@
 var appControllers = angular.module('appControllers', []);
 
-appControllers.controller('ListController', ['$scope', '$http', function($scope, $http) {
-  $http.get('/js/data.json').success(function(data) {
-    $scope.tenThings = data;   
+appControllers.controller('ListController', ['$http', function($http) {
+  var selfLC = this;
+  $http.get('/data.json').success(function(data) {
+    selfLC.tenThings = data;   
   });
 }]);
 
-appControllers.controller('DetailsController', ['$scope', '$http','$routeParams', function($scope, $http, $routeParams) {
-  $http.get('/js/data.json').success(function(data) {
-    $scope.tenThings = data;   
-    $scope.whichItem = $routeParams.itemId;  
+appControllers.controller('DetailsController', ['$http','$routeParams', 
+  function($http, $routeParams) {
+  var selfDC = this;
+  $http.get('/data.json').success(function(data) {
+    selfDC.tenThings = data;   
+    selfDC.whichItem = $routeParams.itemId;  
       
-    if ($routeParams.itemId > 0) {
-      $scope.prevItem = Number($routeParams.itemId)-1;
+    if (selfDC.whichItem > 0) {
+      selfDC.prevItem = Number(selfDC.whichItem)-1;
     } else {
-      $scope.prevItem = $scope.tenThings.length-1;
+      selfDC.prevItem = selfDC.tenThings.length-1;
     }
 
-    if ($routeParams.itemId < $scope.tenThings.length-1) {
-      $scope.nextItem = Number($routeParams.itemId)+1;
+    if (selfDC.whichItem < selfDC.tenThings.length-1) {
+      selfDC.nextItem = Number(selfDC.whichItem)+1;
     } else {
-      $scope.nextItem = 0;
+      selfDC.nextItem = 0;
     }  
       
   });

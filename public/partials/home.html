@@ -1,15 +1,15 @@
 <br/><br/>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">    
-        <div ng-repeat="item in tenThings">        
+        <div ng-repeat="item in lc.tenThings">        
          
-           <a href="#/details/{{tenThings.indexOf(item)}}">   
+           <a href="#/details/{{lc.tenThings.indexOf(item)}}">   
             <p class="fancyText" style="font-size:40px;"><b>{{$index + 1}}.</b></p>
                
-            <img class="img-rounded" style="float:right" height="200" width="200" 
+            <img class="img-circle" style="float:right" height="200" width="200" 
                  ng-src="images/{{item.imageName}}.jpg" alt="Photo of {{item.name}}"/>
                
-            <h3><code>{{item.name}}</code></h3>   
+            <h3>{{item.name}}</h3>   
                
             <p ><b>{{item.summary}}</b></p>
                

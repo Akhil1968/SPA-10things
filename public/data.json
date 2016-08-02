@@ -7,17 +7,17 @@
   },      
     
   {
-    "name":"Swim in the ocean",
-    "imageName":"swim-in-ocean",
-    "summary":"Ever wondered how it feels to swim in an ocean",   
-    "description":"Swimming in the ocean is not for faint-hearted. It requires lot of courage to do so. Its one of very unique experience that can only be felt, can't be expressed in words. If you think you have the guts then give it a try, you will never regret."
+    "name":"Go stargazing",
+    "imageName":"go-stargazing",
+    "summary":"Go stargazing",   
+    "description":"A night of stargazing is the perfect way to put life into perspective, and feel super insignificant. If you’re lucky, you may spot an alien and get probed."
   },
     
   {
-    "name":"Go on a pilgrimage",
-    "imageName":"go-to-pilgrimage",
-    "summary":"There is no better way to regain your spiritual strength than going to pilgrimage",
-    "description":"Pilgrimage gives us the chance to re-energise mentally, physically and spiritually.Often, people go on pilgrimage when they are at a crossroads in their lives, when undergoing a change in their life’s direction or relationships.Going on a pilgrimage is a great way to heal our soul."
+    "name":"Disconnect for a week",
+    "imageName":"disconnect-for-a-week",
+    "summary":"No phone. No internet. No TV. Nothing.",
+    "description":"Free yourself from the burden of modern technology. Sure, you may want to blow your brains out at first, but you’ll discover some amazing things you may not have otherwise. Plus, you’ll learn a lot more about yourself. If you think the temptation  of screens will be too great, remove yourself from them. Spend the entire time camping or hiking."
   },    
   {
     "name":"Take a random city tour",
